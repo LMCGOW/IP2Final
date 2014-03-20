@@ -4,7 +4,7 @@ using System.Collections;
 public class SpawnEnemy : MonoBehaviour {
 
     static int enemyCount = 0;
-    public static int maxEnemyCount = 3;
+    public static int maxEnemyCount = 20;
 
 	public int setMaxEnemyCount = 0;
 
