@@ -8,13 +8,17 @@ public class MG_TrashSpawn : MonoBehaviour {
 	//The amount of trash to use this level
 	int amountOfTrash;
 
+    static int trashLeft;
+
     float timer = 0f;
 
 	// Use this for initialization
 	void Start () {
 
-		amountOfTrash = PlayerScore.SafeScore;
-		Debug.Log (amountOfTrash);
+        amountOfTrash = PlayerScore.Score;
+        trashLeft = amountOfTrash;
+
+        Debug.Log(PlayerScore.SafeScore);
 
         AddTrash();
 
@@ -36,11 +40,24 @@ public class MG_TrashSpawn : MonoBehaviour {
             AddTrash();
             timer = 0;
         }
+
+        Debug.Log("Trash left: " + trashLeft);
+
+        if (trashLeft == 0)
+        {
+            PlayerMovement.respawnPlayer();
+            Application.LoadLevel(0);
+        }
     }
 
     void AddTrash()
     {
         Instantiate(trash, this.transform.position, new Quaternion(0, 0, 0, 0));
 		amountOfTrash--;
+    }
+
+    public static void ChangeTrashLeft()
+    {
+        trashLeft--;
     }
 }

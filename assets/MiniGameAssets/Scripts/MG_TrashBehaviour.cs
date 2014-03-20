@@ -36,6 +36,9 @@ public class MG_TrashBehaviour : MonoBehaviour {
         if(this.transform.position.x >= endPosition.x){
             Destroy(gameObject);
             MG_ShowScore.AddScore(1);
+            PlayerScore.ChangeSafeScore(1);
+            MG_TrashSpawn.ChangeTrashLeft();
+            Debug.Log(PlayerScore.SafeScore);
         }
 
     }
@@ -43,6 +46,7 @@ public class MG_TrashBehaviour : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D colInfo)
 	{
 		Destroy (gameObject);
+        MG_TrashSpawn.ChangeTrashLeft();
 	}
 
 
