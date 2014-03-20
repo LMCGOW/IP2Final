@@ -15,4 +15,6 @@ public class OpenGateTwo : MonoBehaviour {
             Destroy(gameObject);
 
 	}
+
+
 }
