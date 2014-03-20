@@ -23,10 +23,7 @@ public class MG_TrashSpawn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//if (amountOfTrash > 0) {
-						CheckForNewTrash ();
-						//amountOfTrash--;
-				//}
+		CheckForNewTrash();
 
 	}
 
@@ -34,7 +31,7 @@ public class MG_TrashSpawn : MonoBehaviour {
     {
         timer += Time.deltaTime;
 
-        if (timer >= 3)
+		if (timer >= 3 && amountOfTrash > 0)
         {
             AddTrash();
             timer = 0;
@@ -44,5 +41,6 @@ public class MG_TrashSpawn : MonoBehaviour {
     void AddTrash()
     {
         Instantiate(trash, this.transform.position, new Quaternion(0, 0, 0, 0));
+		amountOfTrash--;
     }
 }
