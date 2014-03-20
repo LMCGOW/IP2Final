@@ -46,7 +46,7 @@ public class MG_TrashSpawn : MonoBehaviour {
         if (trashLeft == 0)
         {
             PlayerMovement.respawnPlayer();
-            Application.LoadLevel(0);
+            Application.LoadLevel(1);
         }
     }
 

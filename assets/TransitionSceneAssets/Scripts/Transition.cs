@@ -26,7 +26,7 @@ public class Transition : MonoBehaviour {
 
         if (currentFrame < 0)
         {
-            Application.LoadLevel(2);
+            Application.LoadLevel(3);
         }
 
         if (transitionTimer <= 0)
