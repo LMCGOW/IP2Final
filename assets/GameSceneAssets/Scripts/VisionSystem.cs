@@ -25,11 +25,11 @@ public class VisionSystem : MonoBehaviour {
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.3f, this.transform.position.y));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.3f, this.transform.position.y), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 		
-			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
+			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
 				//PlayerMovement.ResetSpeed();
 				PlayerScore.ChangeSafeScore();
-				Application.LoadLevel(2);
+				Application.LoadLevel(1);
 			}
 		}
 
@@ -38,11 +38,11 @@ public class VisionSystem : MonoBehaviour {
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.3f, this.transform.position.y));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.3f, this.transform.position.y), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 			
-			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
+			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
 				//PlayerMovement.ResetSpeed();
 				PlayerScore.ChangeSafeScore();
-				Application.LoadLevel(2);
+				Application.LoadLevel(1);
 			}
 		}
 
@@ -51,11 +51,11 @@ public class VisionSystem : MonoBehaviour {
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.3f));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.3f), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 			
-			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
+			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
 				//PlayerMovement.ResetSpeed();
 				PlayerScore.ChangeSafeScore();
-				Application.LoadLevel(2);
+				Application.LoadLevel(1);
 			}
 		}
 
@@ -64,11 +64,11 @@ public class VisionSystem : MonoBehaviour {
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.3f));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.3f), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 			
-			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
+			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
 				//PlayerMovement.ResetSpeed();
 				PlayerScore.ChangeSafeScore();
-				Application.LoadLevel(2);
+				Application.LoadLevel(1);
 			}
 		}
 		
@@ -80,11 +80,11 @@ public class VisionSystem : MonoBehaviour {
         Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.3f, this.transform.position.y));
         atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.3f, this.transform.position.y), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 
-        if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
+        if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
         {
 			//PlayerMovement.ResetSpeed();
             PlayerScore.ChangeSafeScore();
-            Application.LoadLevel(2);
+            Application.LoadLevel(1);
         }
 
     }*/
