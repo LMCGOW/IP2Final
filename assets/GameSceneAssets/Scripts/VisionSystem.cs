@@ -14,7 +14,6 @@ public class VisionSystem : MonoBehaviour {
 	void Update () {
 
         CheckIfAtRecyclingPlant();
-        
 	}
 
 
@@ -27,8 +26,8 @@ public class VisionSystem : MonoBehaviour {
 		
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
-				//PlayerMovement.ResetSpeed();
-				PlayerScore.ChangeSafeScore();
+                //PlayerMovement.ResetSpeed();
+                PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(1);
 			}
 		}
@@ -41,7 +40,7 @@ public class VisionSystem : MonoBehaviour {
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
 				//PlayerMovement.ResetSpeed();
-				PlayerScore.ChangeSafeScore();
+                PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(1);
 			}
 		}
@@ -54,7 +53,7 @@ public class VisionSystem : MonoBehaviour {
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
 				//PlayerMovement.ResetSpeed();
-				PlayerScore.ChangeSafeScore();
+                PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(1);
 			}
 		}
@@ -67,8 +66,9 @@ public class VisionSystem : MonoBehaviour {
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score > 5)
 			{
 				//PlayerMovement.ResetSpeed();
-				PlayerScore.ChangeSafeScore();
+                PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(1);
+                
 			}
 		}
 		

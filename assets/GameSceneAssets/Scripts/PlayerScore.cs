@@ -50,9 +50,9 @@ public class PlayerScore : MonoBehaviour {
         playerScore += delta;
     }
 
-    public static void ChangeSafeScore()
+    public static void ChangeSafeScore(int score)
     {
-        safePlayerScore += playerScore;
+        safePlayerScore += score;
         playerScore = 0;
     }
 }

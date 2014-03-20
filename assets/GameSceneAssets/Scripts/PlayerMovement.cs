@@ -6,14 +6,24 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 4;
     public Vector2 vel;
 
-	public GameObject trash;
+    static bool respawn = false;
 
-    bool moving;
+    public static Vector3 playerSpawn;
+
+    public bool forwardAnimation;
+    public bool backwardAnimation;
+    public bool rightAnimation;
+    public bool leftAnimation;
+    public bool idle;
+
+    public GameObject[] animationFrames = new GameObject[4];
+
+	public GameObject trash;
 
 	// Use this for initialization
 	void Start () {
-	
 
+        this.transform.position = playerSpawn;
 
 	}
 	
@@ -22,9 +32,16 @@ public class PlayerMovement : MonoBehaviour {
 
         MovePlayer();
         LockCameraToPlayer();
+        //AnimatePlayer();
 
 		if (speed < 2.0f)
 			speed = 2.0f;
+
+        if (respawn)
+        {
+            playerSpawn = this.transform.position;
+            respawn = false;
+        }
 
 	}
 	
@@ -45,46 +62,8 @@ public class PlayerMovement : MonoBehaviour {
     void MovePlayer()
     {
         vel = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
-        if (vel.magnitude > 0)
-        {
-            moving = true;
-        }
+
         rigidbody2D.velocity = vel;
-        /*
-        if (Input.GetKey(KeyCode.W))
-        {
-            this.rigidbody2D.velocity = (new Vector2(0, speed));
-            moving = true;
-        }
-
-        else if (Input.GetKey(KeyCode.S))
-        {
-            this.rigidbody2D.velocity = (new Vector2(0, -speed));
-            moving = true;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            this.rigidbody2D.velocity = (new Vector2(speed, 0));
-            moving = true;
-        }
-
-        else if (Input.GetKey(KeyCode.A))
-        {
-            this.rigidbody2D.velocity = (new Vector2(-speed, 0));
-            moving = true;
-        }
-        */
-
-        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W))
-        {
-            moving = false;
-        }
-
-        if (!moving)
-        {
-            rigidbody2D.velocity = new Vector2(0, 0);
-        }
     }
 
     void LockCameraToPlayer()
@@ -110,4 +89,16 @@ public class PlayerMovement : MonoBehaviour {
 			PlayerScore.ChangeScore(-5);
         }
     }
+
+    void AnimatePlayer()
+    {
+
+
+    }
+
+    public static void respawnPlayer()
+    {
+        respawn = true;
+    }
+
 }
