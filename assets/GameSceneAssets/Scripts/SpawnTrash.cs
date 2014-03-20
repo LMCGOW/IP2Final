@@ -12,8 +12,8 @@ public class SpawnTrash : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-        
+
+        trashCount = 0;
 
 	}
 	

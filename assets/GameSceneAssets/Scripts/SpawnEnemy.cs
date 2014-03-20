@@ -12,7 +12,9 @@ public class SpawnEnemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
+        enemyCount = 0;
+
 	}
 	
 	// Update is called once per frame

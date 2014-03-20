@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        this.transform.position = playerSpawn;
+        
 
 	}
 	
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
 
         if (respawn)
         {
-            playerSpawn = this.transform.position;
+            this.transform.position = playerSpawn;
             respawn = false;
         }
 
