@@ -167,5 +167,23 @@ TextureImporter:
         height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
+    - name: trashSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 230
+        width: 138
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: trashSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 432
+        width: 195
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
