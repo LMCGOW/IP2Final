@@ -7,8 +7,8 @@ public class MG_SpawnEnemy : MonoBehaviour {
 
     public GameObject enemy;
 
-    int minWaveSpawn = 1;
-    int maxWaveSpawn = 3;
+    public int minWaveSpawn = 1;
+    public int maxWaveSpawn = 3;
 
 	// Use this for initialization
 	void Start () {

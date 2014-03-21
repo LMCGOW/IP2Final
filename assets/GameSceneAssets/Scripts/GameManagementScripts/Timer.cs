@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Timer : MonoBehaviour
 {
-
-    GameObject colonImage;
+	//Lee's Timer
+	/* GameObject colonImage;
 
     float animationHTimer = 60f;
     int currentHFrame = 4;
@@ -142,7 +142,44 @@ public class Timer : MonoBehaviour
             destroyHPrevious = false;
         }
 
-    }
+    } */
+	//Tom's Timer
+	/*
+	float timerMinutes = 4.0F;
+	float timerSeconds = 60.0F;
+
+	bool coolDown = false;
+	float coolDownTimer = 0.0F;
+	
+	void Update() 
+	{
+
+		timerSeconds -= Time.deltaTime;
+
+		if (timerSeconds <= 0 && !coolDown)
+		{
+			timerMinutes --;
+			timerSeconds = 60.0F;
+			coolDown = true;
+			coolDownTimer = 1;
+		}
+
+		if (coolDown)
+		{
+			coolDownTimer--;
+
+			if (coolDownTimer <= 0)
+			{
+				coolDown = false;
+			}
+		}
 
 
+	}
+
+	void OnGUI() 
+	{
+		GUI.Label(new Rect( Screen.width - 210, 10, 200, 25), "Time left:" + " " + timerMinutes.ToString("F0") + ":" + timerSeconds.ToString("F0"));
+	}
+	*/
 }

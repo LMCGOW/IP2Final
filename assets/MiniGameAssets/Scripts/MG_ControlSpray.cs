@@ -10,7 +10,7 @@ public class MG_ControlSpray : MonoBehaviour {
 
      
         this.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Screen.showCursor = false;
+        //Screen.showCursor = false;
 
 	}
 	
@@ -25,11 +25,11 @@ public class MG_ControlSpray : MonoBehaviour {
     void OnMouseDown()
     {
 
-        this.transform.rotation = new Quaternion(0, 0, this.transform.rotation.x + 5, 0);
+		this.transform.rotation = new Quaternion(this.transform.rotation.x + 5, 0, 0, 0);
     }
 
     void OnMouseUp()
     {
-        this.transform.rotation = new Quaternion(0, 0, this.transform.rotation.x - 5, 0);
+		this.transform.rotation = new Quaternion(this.transform.rotation.x - 5, 0, 0, 0);
     }
 }

@@ -187,18 +187,19 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 
     void DisplayHealthReduction()
     {
+		GameObject healthDisplay = healthReduction;
 
-        float displayTimer = 1f;
-        GameObject healthDisplay =null;
+        /*float displayTimer = 0.1f;
 
         while (displayTimer >= 0)
         {
             displayTimer -= Time.deltaTime;
-            healthDisplay = (GameObject)Instantiate(healthReduction, new Vector3(this.transform.position.x + 0.4f, this.transform.position.y + 0.4f, 0), Quaternion.identity);
-        }
+*/
+        healthDisplay = (GameObject)Instantiate(healthReduction, new Vector3(this.transform.position.x + 0.4f, this.transform.position.y + 0.4f, 0), Quaternion.identity);
+		/*}
 
         timer = 1f;
-        Destroy(healthDisplay);
+        Destroy(healthDisplay);*/
 
     }
 
