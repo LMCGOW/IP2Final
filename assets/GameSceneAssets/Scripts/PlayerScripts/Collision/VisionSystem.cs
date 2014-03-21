@@ -27,6 +27,9 @@ public class VisionSystem : MonoBehaviour {
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
 			{
                 //PlayerMovement.ResetSpeed();
+				timerHandlerScript.timerSaveMinutes = Timer.timerMinutes;
+				timerHandlerScript.timerSaveSeconds = Timer.timerSeconds;
+				timerHandlerScript.timeSaved = true;
                 PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(2);
 			}
@@ -40,6 +43,9 @@ public class VisionSystem : MonoBehaviour {
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
 			{
 				//PlayerMovement.ResetSpeed();
+				timerHandlerScript.timerSaveMinutes = Timer.timerMinutes;
+				timerHandlerScript.timerSaveSeconds = Timer.timerSeconds;
+				timerHandlerScript.timeSaved = true;
                 PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(2);
 			}
@@ -53,6 +59,9 @@ public class VisionSystem : MonoBehaviour {
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
 			{
 				//PlayerMovement.ResetSpeed();
+				timerHandlerScript.timerSaveMinutes = Timer.timerMinutes;
+				timerHandlerScript.timerSaveSeconds = Timer.timerSeconds;
+				timerHandlerScript.timeSaved = true;
                 PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(2);
 			}
@@ -66,6 +75,9 @@ public class VisionSystem : MonoBehaviour {
 			if (Input.GetKey(KeyCode.Space) && atRecyclingPlant && PlayerScore.Score >= 5)
 			{
 				//PlayerMovement.ResetSpeed();
+				timerHandlerScript.timerSaveMinutes = Timer.timerMinutes;
+				timerHandlerScript.timerSaveSeconds = Timer.timerSeconds;
+				timerHandlerScript.timeSaved = true;
                 PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(2);
                 

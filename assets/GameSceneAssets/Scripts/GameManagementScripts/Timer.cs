@@ -144,24 +144,52 @@ public class Timer : MonoBehaviour
 
     } */
 	//Tom's Timer
-	/*
-	float timerMinutes = 4.0F;
-	float timerSeconds = 60.0F;
+
+	public static float timerMinutes;
+	public static float timerSeconds;
 
 	bool coolDown = false;
 	float coolDownTimer = 0.0F;
-	
+
+	void Start()
+	{
+
+		if (!timerHandlerScript.timeSaved)
+		{
+			timerMinutes = 4.0F;
+		}
+		else {
+			timerMinutes = timerHandlerScript.timerSaveMinutes;
+		}
+
+		if (!timerHandlerScript.timeSaved)
+		{
+			timerSeconds = 59.0F;
+		}
+		else {
+			timerSeconds = timerHandlerScript.timerSaveSeconds;
+		}
+	}
+
 	void Update() 
 	{
+
+
 
 		timerSeconds -= Time.deltaTime;
 
 		if (timerSeconds <= 0 && !coolDown)
 		{
+			if (timerMinutes > 0)
+			{
 			timerMinutes --;
-			timerSeconds = 60.0F;
+			timerSeconds = 59.0F;
 			coolDown = true;
 			coolDownTimer = 1;
+			}
+			else {
+				Application.LoadLevel(4);
+			}	
 		}
 
 		if (coolDown)
@@ -173,13 +201,11 @@ public class Timer : MonoBehaviour
 				coolDown = false;
 			}
 		}
-
-
 	}
 
 	void OnGUI() 
 	{
 		GUI.Label(new Rect( Screen.width - 210, 10, 200, 25), "Time left:" + " " + timerMinutes.ToString("F0") + ":" + timerSeconds.ToString("F0"));
 	}
-	*/
+
 }
