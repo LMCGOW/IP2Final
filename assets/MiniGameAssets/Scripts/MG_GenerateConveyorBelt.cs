@@ -46,6 +46,8 @@ public class MG_GenerateConveyorBelt : MonoBehaviour {
         GenerateTemporaryConveyorBelt();
         //GenerateConveyorBelt();
 
+        Screen.showCursor = false;
+
 	}
 
     /// <summary>

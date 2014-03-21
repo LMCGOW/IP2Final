@@ -5,6 +5,7 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 
     public GameObject background;
 	public GameObject[] trashOnScreen;
+    public GameObject healthReduction;
 
 	public GameObject conveyorEntrance;
 
@@ -22,7 +23,9 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 	//Will be true if the enemy has not yet passed the conveyor belt
 	bool hasNotPassedConveyor = true;
 
-    public float speed = 0.02f;
+    public float speed = 0.03f;
+
+    float timer = 2f;
 
 	// Use this for initialization
 	void Start () {
@@ -98,24 +101,35 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 
 						Vector3 trashPosition = trashFocus.transform.position;
 
-						if (this.transform.position.y > trashPosition.y) {
-	
-								this.transform.position -= new Vector3 (0, speed, 0);
+                      
+                            if (this.transform.position.x > trashPosition.x)
+                            {
 
-						}
+                                this.transform.position -= new Vector3(speed, 0, 0);
+                                this.transform.position -= new Vector3(0, 0.005f, 0);
 
-						if (this.transform.position.x > trashPosition.x) {
+                            }
+                            else if (this.transform.position.x < trashPosition.x)
+                            {
 
-								this.transform.position -= new Vector3 (speed, 0, 0);
-	
-						} else if (this.transform.position.x < trashPosition.x) {
+                                this.transform.position += new Vector3(speed, 0, 0);
+                                this.transform.position -= new Vector3(0, 0.005f, 0);
 
-								this.transform.position += new Vector3 (speed, 0, 0);
+                            }
 
-						}
+           
 
-					
-			RotateToFace();
+                            if (this.transform.position.x > (trashPosition.x - 0.1f) && this.transform.position.x < (trashPosition.x + 0.1f))
+                            {
+
+                                if (this.transform.position.y > trashPosition.y)
+                                {
+
+                                    this.transform.position -= new Vector3(0, speed, 0);
+
+                                }
+
+                            }
 		
 
 				} else {
@@ -129,28 +143,64 @@ public class MG_EnemyBehaviour : MonoBehaviour {
     void MoveEnemy()
     {
 
-        this.transform.position -= new Vector3(0, speed, 0);
+        HeadTowardTrash();
 
     }
 
     void OnMouseDown()
     {
-        health-=50;
+        health -= 50;
     }
 
+    void OnCollisionEnter2D(Collision2D colInfo)
+    {
+        if (colInfo.collider.tag == "MG_BugSpray")
+        {
+            health -= 50;
+            DisplayHealthReduction();
+        }
+    }
+    
 	/// <summary>
 	/// Rotates the enemy to face the trash.
 	/// </summary>
 	void RotateToFace(){
 
-		var newRotation = Quaternion.LookRotation(transform.position - trashFocus.transform.position, Vector3.forward);
 		
-		newRotation.x = 0.0f;
-		
-		newRotation.y = 0.0f;
-		
-		transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 8);
 	}
+
+    //If sprayed, these bugs will retreat for a few seconds
+    void FallBack()
+    {
+        timer = 0.6f;
+
+        while (timer > 0)
+        {
+            timer -= Time.deltaTime;
+
+            this.transform.position += new Vector3(speed*1.5f, speed*1.5f, 0);
+        }
+
+        timer = 3f;
+        
+    }
+
+    void DisplayHealthReduction()
+    {
+
+        float displayTimer = 1f;
+        GameObject healthDisplay =null;
+
+        while (displayTimer >= 0)
+        {
+            displayTimer -= Time.deltaTime;
+            healthDisplay = (GameObject)Instantiate(healthReduction, new Vector3(this.transform.position.x + 0.4f, this.transform.position.y + 0.4f, 0), Quaternion.identity);
+        }
+
+        timer = 1f;
+        Destroy(healthDisplay);
+
+    }
 
    
 }

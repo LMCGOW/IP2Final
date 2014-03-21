@@ -24,6 +24,8 @@ public class Timer : MonoBehaviour
 
     public GameObject[] timerGraphics = new GameObject[11];
 
+    float overallTimer = 300f;
+
     // Use this for initialization
     void Start()
     {
@@ -41,6 +43,13 @@ public class Timer : MonoBehaviour
         colonImage.transform.position = new Vector3(Camera.main.transform.position.x + 9, Camera.main.transform.position.y + 4.5f, -2);
         initialTImage.transform.position = new Vector3(Camera.main.transform.position.x + 10, Camera.main.transform.position.y + 4.5f, -2);
         initialUImage.transform.position = new Vector3(Camera.main.transform.position.x + 11, Camera.main.transform.position.y + 4.5f, -2);
+
+        overallTimer -= Time.deltaTime;
+
+        if (overallTimer <= 0)
+            Application.LoadLevel(4);
+
+      
     }
 
     /// <summary>
@@ -122,8 +131,8 @@ public class Timer : MonoBehaviour
             animationHTimer = 60f;
         }
 
-        if (currentTFrame < minFrame)
-            currentTFrame = 4;
+        if (currentHFrame < minFrame)
+            currentHFrame = 4;
 
 
         if (destroyHPrevious)

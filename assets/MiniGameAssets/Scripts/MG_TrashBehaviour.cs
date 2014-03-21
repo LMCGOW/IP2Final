@@ -45,8 +45,11 @@ public class MG_TrashBehaviour : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D colInfo)
 	{
-		Destroy (gameObject);
-        MG_TrashSpawn.ChangeTrashLeft();
+        if (colInfo.collider.tag == "MG_Enemy")
+        {
+            Destroy(gameObject);
+            MG_TrashSpawn.ChangeTrashLeft();
+        }
 	}
 
 

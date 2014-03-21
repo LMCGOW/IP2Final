@@ -8,7 +8,7 @@ public class MG_SpawnEnemy : MonoBehaviour {
     public GameObject enemy;
 
     int minWaveSpawn = 1;
-    int maxWaveSpawn = 2;
+    int maxWaveSpawn = 3;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +35,7 @@ public class MG_SpawnEnemy : MonoBehaviour {
 			
 			for (int i = 0; i < randomNumber; i++)
 			{
-				Instantiate(enemy, new Vector3(RandomNumber.GenerateRandomNumber((int)(this.transform.position.x - this.renderer.bounds.size.x/ 2), (int)(this.transform.position.x + this.renderer.bounds.size.x / 2)), (this.transform.position.y + this.renderer.bounds.size.y / 2), 0), new Quaternion(0, 0, 180, 0));
+				Instantiate(enemy, new Vector3(RandomNumber.GenerateRandomNumber((int)(this.transform.position.x - this.renderer.bounds.size.x/ 2), (int)(this.transform.position.x + this.renderer.bounds.size.x / 2)), (this.transform.position.y + this.renderer.bounds.size.y / 2), 0), new Quaternion(0, 0, 0, 0));
 			}
 			
 			timer = 0;
