@@ -8,6 +8,9 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 
 	public GameObject conveyorEntrance;
 
+    //The health of the enemy
+    int health = 100;
+
 	//The number that will be generated to pick a random gameobject from the trashOnScreen array
 	int trashFocusIndex;
 	//Will store the trash that the game object will follow
@@ -39,6 +42,9 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 		if (trashFocus != null) {
 						HeadTowardTrash ();
 				}
+
+        if (health <= 0)
+            Destroy(gameObject);
 
         
 	}
@@ -129,7 +135,7 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 
     void OnMouseDown()
     {
-        Destroy(gameObject);
+        health-=50;
     }
 
 	/// <summary>
@@ -145,4 +151,6 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 		
 		transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 8);
 	}
+
+   
 }

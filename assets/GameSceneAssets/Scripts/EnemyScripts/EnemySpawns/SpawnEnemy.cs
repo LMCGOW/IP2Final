@@ -18,8 +18,12 @@ public class SpawnEnemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        SpawnEnemies();
+        if (PlayerScore.SafeScore < 20)
+        {
 
+            SpawnEnemies();
+
+        }
 	}
 
     public void SpawnEnemies()

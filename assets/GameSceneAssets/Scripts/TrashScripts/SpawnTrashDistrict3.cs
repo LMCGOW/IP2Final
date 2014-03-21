@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpawnTrashDistrict2 : MonoBehaviour {
+public class SpawnTrashDistrict3 : MonoBehaviour {
 
+    public GameObject[] trashList = new GameObject[8];
 
-    public GameObject[] trashList = new GameObject[5];
-
-    int maxTrashCount = 15;
+    int maxTrashCount = 25;
     int trashCount = 0;
 
     int randomNumber;
@@ -24,10 +23,10 @@ public class SpawnTrashDistrict2 : MonoBehaviour {
     void Update()
     {
 
-        if (PlayerScore.SafeScore >= 20)
+        if (PlayerScore.SafeScore >= 40)
         {
 
-            randomTrashIndex = RandomNumber.GenerateRandomNumber(0, 5);
+            randomTrashIndex = RandomNumber.GenerateRandomNumber(0, 8);
 
             if (RandomNumber.GenerateRandomNumber(0, 100000) < 5 && trashCount < maxTrashCount)
             {
