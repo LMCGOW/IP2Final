@@ -4,9 +4,7 @@ using System.Collections;
 public class SpawnEnemy : MonoBehaviour {
 
     static int enemyCount = 0;
-    public static int maxEnemyCount = 20;
-
-	public int setMaxEnemyCount = 0;
+    public static int maxEnemyCount = 6;
 
     public GameObject enemy;
 
@@ -19,8 +17,6 @@ public class SpawnEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		maxEnemyCount = setMaxEnemyCount;
 
         SpawnEnemies();
 

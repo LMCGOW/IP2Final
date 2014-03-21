@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerScore : MonoBehaviour {
 
     static int playerScore = 0;
-    static int safePlayerScore = 0;
+    static int safePlayerScore = 20;
 
 	public static int Score{
 

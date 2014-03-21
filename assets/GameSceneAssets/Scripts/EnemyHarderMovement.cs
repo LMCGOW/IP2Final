@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyMovement : MonoBehaviour {
+public class EnemyHarderMovement : MonoBehaviour {
 
 
     GameObject player;
@@ -30,10 +30,11 @@ public class EnemyMovement : MonoBehaviour {
     int random1;
     int random2;
 
-	float enemyWalkingSpeed = 2f;
+    float enemyWalkingSpeed = 2.4f;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 
         random1 = RandomNumber.GenerateRandomNumber(0, 20);
 
@@ -49,10 +50,11 @@ public class EnemyMovement : MonoBehaviour {
         if (random1 >= 15 && random1 <= 20)
             moveLeft = true;
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (!chasePlayer)
         {
@@ -62,38 +64,38 @@ public class EnemyMovement : MonoBehaviour {
             //CheckForPlayer();
         }
 
-        if(chasePlayer)
-        ChasePlayer();
+        if (chasePlayer)
+            ChasePlayer();
 
-	}
+    }
 
     void CheckDirections()
     {
 
         checkRight = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.3f, this.transform.position.y), 1 << LayerMask.NameToLayer("Wall"));
         checkLeft = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.3f, this.transform.position.y), 1 << LayerMask.NameToLayer("Wall"));
-        checkUp = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.3f),   1 << LayerMask.NameToLayer("Wall"));
+        checkUp = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.3f), 1 << LayerMask.NameToLayer("Wall"));
         checkDown = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.3f), 1 << LayerMask.NameToLayer("Wall"));
 
         checkForPlayerRight = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.6f, this.transform.position.y), 1 << LayerMask.NameToLayer("Player"));
         checkForPlayerLeft = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.6f, this.transform.position.y), 1 << LayerMask.NameToLayer("Player"));
         checkForPlayerUp = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.6f), 1 << LayerMask.NameToLayer("Player"));
         checkForPlayerDown = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.6f), 1 << LayerMask.NameToLayer("Player")); ;
-        
+
 
         checkForRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.3f, this.transform.position.y + 0.3f), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 
-       /* Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.6f, this.transform.position.y));
-        Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.6f, this.transform.position.y));
-        Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.6f));
-        Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.6f));
-        */
+        /* Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.6f, this.transform.position.y));
+         Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.6f, this.transform.position.y));
+         Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.6f));
+         Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.6f));
+         */
     }
 
     void ChangeDirections()
     {
 
-        
+
 
         if (checkDown && moveDown)
         {
@@ -211,7 +213,7 @@ public class EnemyMovement : MonoBehaviour {
 
         }
 
-      
+
     }
 
     void MoveEnemy()
@@ -266,5 +268,4 @@ public class EnemyMovement : MonoBehaviour {
             this.transform.position -= new Vector3(0, enemyWalkingSpeed, 0);
     }
 
-   
 }

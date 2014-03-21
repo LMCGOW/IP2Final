@@ -88,6 +88,20 @@ public class PlayerMovement : MonoBehaviour {
 
 			PlayerScore.ChangeScore(-5);
         }
+        else if (collisionInfo.collider.tag == "EnemyHarder")
+        {
+            if (PlayerScore.Score >= 5)
+            {
+                ChangeSpeed(0.5f);
+            }
+            else
+            {
+                ChangeSpeed(0.1f * PlayerScore.Score);
+            }
+
+            PlayerScore.ChangeScore(-10);
+
+        }
     }
 
     void AnimatePlayer()
