@@ -13,7 +13,7 @@ public class OpenGateTwo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (PlayerScore.SafeScore >= 40)
+        if (PlayerScore.SafeScore >= 30)
         {
             Instantiate(roadObject, this.transform.position, Quaternion.identity);
             Destroy(gameObject);

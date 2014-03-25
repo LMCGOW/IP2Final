@@ -19,8 +19,6 @@ public class VisionSystem : MonoBehaviour {
 
 	void CheckIfAtRecyclingPlant()
 	{
-		if (Input.GetAxis("Horizontal") < 0) 
-		{
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.3f, this.transform.position.y));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x - 0.3f, this.transform.position.y), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 		
@@ -33,10 +31,7 @@ public class VisionSystem : MonoBehaviour {
                 PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(2);
 			}
-		}
-
-		if (Input.GetAxis("Horizontal") > 0) 
-		{
+	
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.3f, this.transform.position.y));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x + 0.3f, this.transform.position.y), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 			
@@ -49,10 +44,7 @@ public class VisionSystem : MonoBehaviour {
                 PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(2);
 			}
-		}
-
-		if (Input.GetAxis("Vertical") < 0) 
-		{
+	
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.3f));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y - 0.3f), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 			
@@ -65,10 +57,7 @@ public class VisionSystem : MonoBehaviour {
                 PlayerMovement.playerSpawn = this.transform.position;
 				Application.LoadLevel(2);
 			}
-		}
-
-		if (Input.GetAxis("Vertical") > 0) 
-		{
+	
 			Debug.DrawLine(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.3f));
 			atRecyclingPlant = Physics2D.Linecast(new Vector2(this.transform.position.x, this.transform.position.y), new Vector2(this.transform.position.x, this.transform.position.y + 0.3f), 1 << LayerMask.NameToLayer("RecyclingPlant"));
 			
@@ -82,8 +71,6 @@ public class VisionSystem : MonoBehaviour {
 				Application.LoadLevel(2);
                 
 			}
-		}
-		
 	}
 
 

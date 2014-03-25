@@ -156,7 +156,7 @@ public class Timer : MonoBehaviour
 
 		if (!timerHandlerScript.timeSaved)
 		{
-			timerMinutes = 4.0F;
+			timerMinutes = 1.0F;
 		}
 		else {
 			timerMinutes = timerHandlerScript.timerSaveMinutes;

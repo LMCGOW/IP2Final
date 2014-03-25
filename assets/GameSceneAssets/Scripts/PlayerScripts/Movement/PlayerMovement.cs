@@ -30,12 +30,19 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		Debug.Log(speed);
+
         MovePlayer();
         LockCameraToPlayer();
         //AnimatePlayer();
 
+		// minimum speed cap
 		if (speed < 2.0f)
 			speed = 2.0f;
+
+		// maximum speed cap
+		if (speed > 4.0f)
+			speed = 4.0f;
 
         if (respawn)
         {
