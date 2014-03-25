@@ -25,8 +25,6 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 
     public float speed = 0.03f;
 
-    float timer = 2f;
-
 	// Use this for initialization
 	void Start () {
 	
@@ -71,23 +69,34 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 		if (!foundTrash) {
 
 			//Generates the array of trash
-			trashOnScreen = GameObject.FindGameObjectsWithTag ("MG_Trash");
+		    trashOnScreen = GameObject.FindGameObjectsWithTag ("MG_Trash");
 
 			//Generates a random index for accessing that array
 			trashFocusIndex = RandomNumber.GenerateRandomNumber (0, trashOnScreen.Length);
 
-			if(trashOnScreen.Length > 0){
-			//Sets the trashFocus object to that element at that random index
-			trashFocus = trashOnScreen [trashFocusIndex];
 
-			//Set foundTrash = true
-			foundTrash = true;
-			}
+            if (trashOnScreen[trashFocusIndex].transform.position.x >= this.transform.position.x - 2 && trashOnScreen[trashFocusIndex].transform.position.x <= this.transform.position.x + 2)
+            {
+                if (trashOnScreen.Length > 0)
+                {
+                    //Sets the trashFocus object to that element at that random index
+                    trashFocus = trashOnScreen[trashFocusIndex];
+                    foundTrash = true;
+                }
+                else
+                {
+                    foundTrash = false;
+                }
 
-				}
 
+            }
+            else
+            {
+                foundTrash = false;
+            }
+                
 
-
+		}
 
 	}
 
@@ -149,57 +158,25 @@ public class MG_EnemyBehaviour : MonoBehaviour {
 
     void OnMouseDown()
     {
-        health -= 50;
+       
     }
 
     void OnCollisionEnter2D(Collision2D colInfo)
     {
-        if (colInfo.collider.tag == "MG_BugSpray")
+        if (colInfo.collider.tag == "MG_BugSpray" && Input.GetMouseButton(0) && MG_ControlSpray.GetSprayRemaining() > 0.0f)
         {
             health -= 50;
             DisplayHealthReduction();
         }
     }
-    
-	/// <summary>
-	/// Rotates the enemy to face the trash.
-	/// </summary>
-	void RotateToFace(){
 
-		
-	}
-
-    //If sprayed, these bugs will retreat for a few seconds
-    void FallBack()
-    {
-        timer = 0.6f;
-
-        while (timer > 0)
-        {
-            timer -= Time.deltaTime;
-
-            this.transform.position += new Vector3(speed*1.5f, speed*1.5f, 0);
-        }
-
-        timer = 3f;
-        
-    }
-
+    /// <summary>
+    /// Displays a graphic when health is reduced
+    /// </summary>
     void DisplayHealthReduction()
     {
-		GameObject healthDisplay = healthReduction;
 
-        /*float displayTimer = 0.1f;
-
-        while (displayTimer >= 0)
-        {
-            displayTimer -= Time.deltaTime;
-*/
-        healthDisplay = (GameObject)Instantiate(healthReduction, new Vector3(this.transform.position.x + 0.4f, this.transform.position.y + 0.4f, 0), Quaternion.identity);
-		/*}
-
-        timer = 1f;
-        Destroy(healthDisplay);*/
+      Instantiate(healthReduction, new Vector3(this.transform.position.x + 0.4f, this.transform.position.y + 0.4f, 0), Quaternion.identity);	
 
     }
 

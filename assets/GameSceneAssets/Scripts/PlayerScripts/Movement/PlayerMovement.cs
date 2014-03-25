@@ -61,7 +61,14 @@ public class PlayerMovement : MonoBehaviour {
 
     void MovePlayer()
     {
-        vel = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S))
+        {
+            vel = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
+        }
+        else
+        {
+            vel = new Vector2(0, 0);
+        }
 
         rigidbody2D.velocity = vel;
     }

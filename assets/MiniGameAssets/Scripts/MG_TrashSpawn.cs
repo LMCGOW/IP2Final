@@ -15,8 +15,11 @@ public class MG_TrashSpawn : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        amountOfTrash = PlayerScore.Score;
-        //amountOfTrash = 100;
+        //amountOfTrash = PlayerScore.Score;
+
+        //Used for testing purposes
+        amountOfTrash = 100;
+
         trashLeft = amountOfTrash;
 
         Debug.Log(PlayerScore.SafeScore);

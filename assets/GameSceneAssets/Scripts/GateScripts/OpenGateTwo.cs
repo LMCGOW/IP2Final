@@ -3,6 +3,8 @@ using System.Collections;
 
 public class OpenGateTwo : MonoBehaviour {
 
+    public GameObject roadObject;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -12,7 +14,10 @@ public class OpenGateTwo : MonoBehaviour {
 	void Update () {
 
         if (PlayerScore.SafeScore >= 40)
+        {
+            Instantiate(roadObject, this.transform.position, Quaternion.identity);
             Destroy(gameObject);
+        }
 
 	}
 

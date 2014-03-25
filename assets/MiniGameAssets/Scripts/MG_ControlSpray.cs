@@ -4,13 +4,14 @@ using System.Collections;
 public class MG_ControlSpray : MonoBehaviour {
 
     float moveSpeed = 3f;
+    static float sprayRemaining = 100;
 
 	// Use this for initialization
 	void Start () {
 
      
         this.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //Screen.showCursor = false;
+
 
 	}
 	
@@ -20,16 +21,33 @@ public class MG_ControlSpray : MonoBehaviour {
        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
        transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
 
+       if (Input.GetMouseButton(0))
+       {
+           RemoveSpray();
+       }
+
+       if (sprayRemaining <= 0)
+           sprayRemaining = 0;
+
 	}
 
-    void OnMouseDown()
+    /// <summary>
+    /// When called, this will begin to deplete the spray can
+    /// </summary>
+    public static void RemoveSpray()
     {
 
-		this.transform.rotation = new Quaternion(this.transform.rotation.x + 5, 0, 0, 0);
+        sprayRemaining -= 0.5f;
+
     }
 
-    void OnMouseUp()
+    public static float GetSprayRemaining()
     {
-		this.transform.rotation = new Quaternion(this.transform.rotation.x - 5, 0, 0, 0);
+        return sprayRemaining;
+    }
+
+    void OnGUI()
+    {
+        GUI.Box(new Rect(10, 40, 150, 20), "Spray remaining: " + sprayRemaining); 
     }
 }
