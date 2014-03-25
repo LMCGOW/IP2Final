@@ -29,6 +29,9 @@ public class MG_ControlSpray : MonoBehaviour {
        if (sprayRemaining <= 0)
            sprayRemaining = 0;
 
+       if (sprayRemaining >= 100)
+           sprayRemaining = 100;
+
 	}
 
     /// <summary>
@@ -45,6 +48,15 @@ public class MG_ControlSpray : MonoBehaviour {
     {
         return sprayRemaining;
     }
+
+    public static void AddSpray(float increment)
+    {
+
+        sprayRemaining += increment;
+
+    }
+
+    
 
     void OnGUI()
     {

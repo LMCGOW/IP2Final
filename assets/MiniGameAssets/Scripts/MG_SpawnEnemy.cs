@@ -7,8 +7,8 @@ public class MG_SpawnEnemy : MonoBehaviour {
 
     public GameObject enemy;
 
-    public int minWaveSpawn = 1;
-    public int maxWaveSpawn = 3;
+    static int minWaveSpawn = 1;
+    static int waveSpawn = 3;
 
 	// Use this for initialization
 	void Start () {
@@ -30,7 +30,7 @@ public class MG_SpawnEnemy : MonoBehaviour {
 		
 		if (timer > 5f)
 		{
-			int randomNumber = RandomNumber.GenerateRandomNumber(minWaveSpawn, maxWaveSpawn);
+			int randomNumber = RandomNumber.GenerateRandomNumber(minWaveSpawn, waveSpawn);
 			
 			
 			for (int i = 0; i < randomNumber; i++)
@@ -42,4 +42,9 @@ public class MG_SpawnEnemy : MonoBehaviour {
 		}
 
 		}
+
+    public static void IncreaseWaveSpawn()
+    {
+        waveSpawn++;
+    }
 }
