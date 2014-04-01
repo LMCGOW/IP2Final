@@ -20,9 +20,12 @@ public class PlayerMovement : MonoBehaviour {
 
 	public GameObject trash;
 
+    Animator animator;
+
 	// Use this for initialization
 	void Start () {
 
+        animator = GetComponent<Animator>();
         
 
 	}
@@ -68,7 +71,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void MovePlayer()
     {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S))
+        /*if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S))
         {
             vel = new Vector2(Input.GetAxis("Horizontal") * speed, Input.GetAxis("Vertical") * speed);
         }
@@ -77,7 +80,36 @@ public class PlayerMovement : MonoBehaviour {
             vel = new Vector2(0, 0);
         }
 
-        rigidbody2D.velocity = vel;
+        rigidbody2D.velocity = vel;*/
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            this.transform.position += new Vector3(0, 0.1f, 0);
+            animator.Play("WalkingUp");
+        }
+    
+        else if (Input.GetKey(KeyCode.D))
+        {
+            this.transform.position += new Vector3(0.1f, 0, 0);
+            animator.Play("WalkingRight");
+        }
+
+        else if (Input.GetKey(KeyCode.A))
+        {
+            this.transform.position += new Vector3(-0.1f, 0, 0);
+            animator.Play("WalkingLeft");
+        }
+
+
+        else if (Input.GetKey(KeyCode.S))
+        {
+            this.transform.position += new Vector3(0, -0.1f, 0);
+            animator.Play("WalkingForward");
+        }
+        else
+        {
+            animator.Play("Idle");
+        }
     }
 
     void LockCameraToPlayer()
