@@ -1,0 +1,1458 @@
+fileFormatVersion: 2
+guid: f1d0672b7d76b0d4587881d79f5b2eb1
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BuildingsAllViews_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 3477
+        width: 243
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3477
+        width: 243
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_2
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 3477
+        width: 236
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_3
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 3477
+        width: 248
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_4
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 3477
+        width: 237
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_5
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 3477
+        width: 254
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_6
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 3477
+        width: 219
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_7
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 3477
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_8
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 3483
+        width: 254
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_9
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 3483
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_10
+      rect:
+        serializedVersion: 2
+        x: 3089
+        y: 3483
+        width: 253
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_11
+      rect:
+        serializedVersion: 2
+        x: 3371
+        y: 3483
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_12
+      rect:
+        serializedVersion: 2
+        x: 3694
+        y: 3483
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_13
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 3483
+        width: 254
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_14
+      rect:
+        serializedVersion: 2
+        x: 4306
+        y: 3483
+        width: 253
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_15
+      rect:
+        serializedVersion: 2
+        x: 4582
+        y: 3483
+        width: 258
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 3200
+        width: 243
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3200
+        width: 243
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_18
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 3200
+        width: 236
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_19
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 3200
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_20
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 3200
+        width: 237
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_21
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 3200
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_22
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 3200
+        width: 219
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_23
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 3200
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_24
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 3212
+        width: 254
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_25
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 3212
+        width: 254
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_26
+      rect:
+        serializedVersion: 2
+        x: 3089
+        y: 3206
+        width: 253
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_27
+      rect:
+        serializedVersion: 2
+        x: 3371
+        y: 3206
+        width: 254
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_28
+      rect:
+        serializedVersion: 2
+        x: 3694
+        y: 3212
+        width: 254
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_29
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 3212
+        width: 254
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_30
+      rect:
+        serializedVersion: 2
+        x: 4306
+        y: 3212
+        width: 253
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_31
+      rect:
+        serializedVersion: 2
+        x: 4582
+        y: 3212
+        width: 254
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_32
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2836
+        width: 237
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_33
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2836
+        width: 248
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_34
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2836
+        width: 248
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_35
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2836
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_36
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 2842
+        width: 237
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_37
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 2842
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_38
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 2842
+        width: 230
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_39
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2842
+        width: 254
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_40
+      rect:
+        serializedVersion: 2
+        x: 3798
+        y: 2923
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_41
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 2929
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_42
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 2675
+        width: 260
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_43
+      rect:
+        serializedVersion: 2
+        x: 4447
+        y: 2863
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_44
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2559
+        width: 237
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_45
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2559
+        width: 248
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_46
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2559
+        width: 248
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_47
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2554
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_48
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 2559
+        width: 237
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_49
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 2559
+        width: 243
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_50
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 2559
+        width: 230
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_51
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2559
+        width: 254
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_52
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 2675
+        width: 265
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_53
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 2675
+        width: 260
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_54
+      rect:
+        serializedVersion: 2
+        x: 3787
+        y: 2900
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_55
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2196
+        width: 277
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_56
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2196
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_57
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2196
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_58
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 2196
+        width: 265
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_59
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 2190
+        width: 259
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_60
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 2190
+        width: 276
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_61
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2190
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_62
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 2190
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_63
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 2369
+        width: 265
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_64
+      rect:
+        serializedVersion: 2
+        x: 3763
+        y: 2369
+        width: 254
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_65
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 2369
+        width: 260
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_66
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 2369
+        width: 260
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_67
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 2335
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_68
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1890
+        width: 277
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_69
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1890
+        width: 254
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_70
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1890
+        width: 271
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_71
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1890
+        width: 265
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_72
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1890
+        width: 259
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_73
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 1890
+        width: 276
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_74
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1890
+        width: 271
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_75
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 1890
+        width: 271
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_76
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 2052
+        width: 265
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_77
+      rect:
+        serializedVersion: 2
+        x: 3763
+        y: 2052
+        width: 254
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_78
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 2052
+        width: 260
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_79
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 2052
+        width: 260
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_80
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1607
+        width: 277
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_81
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1607
+        width: 254
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_82
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1601
+        width: 271
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_83
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1601
+        width: 265
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_84
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1601
+        width: 259
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_85
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 1601
+        width: 276
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_86
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1601
+        width: 271
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_87
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 1601
+        width: 271
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_88
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 1740
+        width: 265
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_89
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 1728
+        width: 265
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_90
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 1740
+        width: 260
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_91
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 1740
+        width: 260
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_92
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1301
+        width: 277
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_93
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1301
+        width: 254
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_94
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1301
+        width: 271
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_95
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1301
+        width: 265
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_96
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1296
+        width: 259
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_97
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 1296
+        width: 276
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_98
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1296
+        width: 271
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_99
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 1296
+        width: 271
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_100
+      rect:
+        serializedVersion: 2
+        x: 3922
+        y: 1524
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_101
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 938
+        width: 259
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_102
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 938
+        width: 271
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_103
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 944
+        width: 260
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_104
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 944
+        width: 277
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_105
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 938
+        width: 265
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_106
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 938
+        width: 271
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_107
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 938
+        width: 265
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_108
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 938
+        width: 271
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_109
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 1192
+        width: 271
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_110
+      rect:
+        serializedVersion: 2
+        x: 3244
+        y: 1192
+        width: 277
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_111
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 1192
+        width: 266
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_112
+      rect:
+        serializedVersion: 2
+        x: 3827
+        y: 1192
+        width: 271
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_113
+      rect:
+        serializedVersion: 2
+        x: 4121
+        y: 1192
+        width: 265
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_114
+      rect:
+        serializedVersion: 2
+        x: 4409
+        y: 1192
+        width: 271
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_115
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 655
+        width: 259
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_116
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 655
+        width: 271
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_117
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 655
+        width: 260
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_118
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 655
+        width: 277
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_119
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 649
+        width: 265
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_120
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 649
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_121
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 655
+        width: 265
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_122
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 655
+        width: 271
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_123
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 897
+        width: 271
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_124
+      rect:
+        serializedVersion: 2
+        x: 3244
+        y: 897
+        width: 277
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_125
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 897
+        width: 266
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_126
+      rect:
+        serializedVersion: 2
+        x: 3827
+        y: 897
+        width: 271
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_127
+      rect:
+        serializedVersion: 2
+        x: 4121
+        y: 897
+        width: 265
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_128
+      rect:
+        serializedVersion: 2
+        x: 4409
+        y: 897
+        width: 271
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_129
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 366
+        width: 259
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_130
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 366
+        width: 271
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_131
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 366
+        width: 260
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_132
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 366
+        width: 277
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_133
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 361
+        width: 265
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_134
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 361
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_135
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 366
+        width: 265
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_136
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 366
+        width: 271
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_137
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 384
+        width: 271
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_138
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 384
+        width: 271
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_139
+      rect:
+        serializedVersion: 2
+        x: 3533
+        y: 384
+        width: 259
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_140
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 384
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_141
+      rect:
+        serializedVersion: 2
+        x: 4127
+        y: 384
+        width: 259
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_142
+      rect:
+        serializedVersion: 2
+        x: 4415
+        y: 384
+        width: 277
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_143
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 78
+        width: 259
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_144
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 78
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_145
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 79
+        width: 260
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_146
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 79
+        width: 277
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_147
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 72
+        width: 265
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_148
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 72
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_149
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 78
+        width: 265
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_150
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 78
+        width: 271
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_151
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 84
+        width: 271
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_152
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 84
+        width: 271
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_153
+      rect:
+        serializedVersion: 2
+        x: 3533
+        y: 84
+        width: 259
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_154
+      rect:
+        serializedVersion: 2
+        x: 3815
+        y: 84
+        width: 283
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_155
+      rect:
+        serializedVersion: 2
+        x: 4127
+        y: 84
+        width: 259
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: BuildingsAllViews_156
+      rect:
+        serializedVersion: 2
+        x: 4415
+        y: 84
+        width: 277
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

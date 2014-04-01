@@ -21,7 +21,7 @@ public class MG_RefillSpray : MonoBehaviour {
         if (MG_ControlSpray.GetSprayRemaining() < 100 && Input.GetMouseButton(0))
         {
 
-            MG_ControlSpray.AddSpray(5);
+            MG_ControlSpray.AddSpray(1);
 
         }
 

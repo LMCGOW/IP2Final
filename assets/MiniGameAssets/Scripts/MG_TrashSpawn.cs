@@ -49,6 +49,7 @@ public class MG_TrashSpawn : MonoBehaviour {
 
         if (trashLeft == 0)
         {
+            MG_SpawnEnemy.IncreaseWaveSpawn();
             PlayerMovement.respawnPlayer();
             Application.LoadLevel(1);
         }
