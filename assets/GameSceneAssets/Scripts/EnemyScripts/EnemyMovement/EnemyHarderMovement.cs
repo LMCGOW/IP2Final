@@ -34,6 +34,8 @@ public class EnemyHarderMovement : MonoBehaviour {
 
     float timer = 2f;
 
+    Animator animator;
+
     // Use this for initialization
     void Start()
     {
@@ -51,6 +53,8 @@ public class EnemyHarderMovement : MonoBehaviour {
 
         if (random1 >= 15 && random1 <= 20)
             moveLeft = true;
+
+        animator = GetComponent<Animator>();
 
     }
 
@@ -222,13 +226,25 @@ public class EnemyHarderMovement : MonoBehaviour {
     void MoveEnemy()
     {
         if (moveUp)
+        {
             rigidbody2D.velocity = new Vector2(0, enemyWalkingSpeed);
+            animator.Play("EnemyUpRed");
+        }
         else if (moveDown)
+        {
             rigidbody2D.velocity = new Vector2(0, -enemyWalkingSpeed);
+            animator.Play("EnemyForwardRed");
+        }
         else if (moveRight)
+        {
             rigidbody2D.velocity = new Vector2(enemyWalkingSpeed, 0);
+            animator.Play("EnemyRightRed");
+        }
         else if (moveLeft)
+        {
             rigidbody2D.velocity = new Vector2(-enemyWalkingSpeed, 0);
+            animator.Play("EnemyLeftRed");
+        }
     }
 
     //Will check if the enemy has seen the player

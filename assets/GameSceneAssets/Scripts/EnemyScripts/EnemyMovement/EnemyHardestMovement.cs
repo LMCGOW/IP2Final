@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyMovement : MonoBehaviour {
+public class EnemyHardestMovement : MonoBehaviour {
 
-
-    GameObject player;
+	  GameObject player;
 
     public bool checkLeft;
     public bool checkRight;
@@ -30,7 +29,7 @@ public class EnemyMovement : MonoBehaviour {
     int random1;
     int random2;
 
-	float enemyWalkingSpeed = 2f;
+	float enemyWalkingSpeed = 3.2f;
 
     float timer = 4f;
 
@@ -226,22 +225,22 @@ public class EnemyMovement : MonoBehaviour {
         if (moveUp)
         {
             rigidbody2D.velocity = new Vector2(0, enemyWalkingSpeed);
-            animator.Play("EnemyUp");
+            animator.Play("EnemyPurpleUp");
         }
         else if (moveDown)
         {
             rigidbody2D.velocity = new Vector2(0, -enemyWalkingSpeed);
-            animator.Play("EnemyForward");
+            animator.Play("EnemyPurpleForward");
         }
         else if (moveRight)
         {
             rigidbody2D.velocity = new Vector2(enemyWalkingSpeed, 0);
-            animator.Play("EnemyRight");
+            animator.Play("EnemyPurpleRight");
         }
         else if (moveLeft)
         {
             rigidbody2D.velocity = new Vector2(-enemyWalkingSpeed, 0);
-            animator.Play("EnemyLeft");
+            animator.Play("EnemyPurpleLeft");
         }
     }
 
@@ -294,7 +293,7 @@ public class EnemyMovement : MonoBehaviour {
         {
             float randomNumber = RandomNumber.GenerateRandomNumber(0, 75);
 
-            
+
 
             if (checkRight)
             {
@@ -321,7 +320,7 @@ public class EnemyMovement : MonoBehaviour {
                     moveUp = true;
 
                 }
-                    
+
 
             }
 
@@ -386,7 +385,7 @@ public class EnemyMovement : MonoBehaviour {
             }
 
 
-            else 
+            else
             {
 
                 if (randomNumber < 25)
@@ -417,12 +416,9 @@ public class EnemyMovement : MonoBehaviour {
 
             timer = 4f;
 
-            
+
 
 
         }
-
     }
-
-   
 }

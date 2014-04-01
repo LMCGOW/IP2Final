@@ -3,8 +3,6 @@ using System.Collections;
 
 public class EnemyCollision : MonoBehaviour {
 
-    public GameObject trash;
-
 	// Use this for initialization
 	void Start () {
 	

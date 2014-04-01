@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 831bf406fe650ce4d90a743e60e1042e
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ENEMY SPRITES (Violet Variant)_0
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1888
+        width: 462
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_1
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1929
+        width: 535
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_2
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 1888
+        width: 462
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_3
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1302
+        width: 654
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_4
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 1298
+        width: 655
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_5
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 1267
+        width: 655
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_6
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 640
+        width: 655
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_7
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 667
+        width: 655
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_8
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 674
+        width: 654
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_9
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 22
+        width: 466
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_10
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 81
+        width: 535
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Violet Variant)_11
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 22
+        width: 466
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

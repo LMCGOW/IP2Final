@@ -1,0 +1,711 @@
+fileFormatVersion: 2
+guid: 6cd91c9f4c838af4bb151d67719fbc24
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ENEMY SPRITES (Red Variant)_0
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1929
+        width: 535
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_1
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 2242
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_2
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 2215
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_3
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 2177
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_4
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 2164
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_5
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 2136
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_6
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 2026
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_7
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 1976
+        width: 40
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_8
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1948
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_9
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1707
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_10
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 1285
+        width: 746
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_11
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1707
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_12
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1456
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_13
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 1457
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_14
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 1384
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_15
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1395
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_16
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 1385
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_17
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1388
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_18
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1374
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_19
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1377
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_20
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1367
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_21
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1364
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_22
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 1364
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_23
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1345
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_24
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 1297
+        width: 15
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_25
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1323
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_26
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1305
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_27
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 1305
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_28
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 1288
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_29
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1072
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_30
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 1069
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_31
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 643
+        width: 654
+        height: 491
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_32
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 1069
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_33
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 967
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_34
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 962
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_35
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 963
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_36
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 818
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_37
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 815
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_38
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 818
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_39
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 760
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_40
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 746
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_41
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 750
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_42
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 750
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_43
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 737
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_44
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 724
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_45
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 726
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_46
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 727
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_47
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 706
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_48
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 688
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_49
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 684
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_50
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 668
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_51
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 667
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_52
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 660
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_53
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 651
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_54
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 259
+        width: 22
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_55
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 321
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_56
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 321
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_57
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 260
+        width: 38
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_58
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 202
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_59
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 146
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_60
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 146
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_61
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 85
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_62
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 77
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_63
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 78
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_64
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 75
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ENEMY SPRITES (Red Variant)_65
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1880
+        width: 488
+        height: 551
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_66
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 1899
+        width: 486
+        height: 557
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_67
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 1230
+        width: 699
+        height: 578
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_68
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1278
+        width: 776
+        height: 526
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_69
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 589
+        width: 724
+        height: 600
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_70
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 596
+        width: 739
+        height: 571
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_71
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 0
+        width: 724
+        height: 560
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_72
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 38
+        width: 605
+        height: 545
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: ENEMY SPRITES (Red Variant)_73
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 0
+        width: 620
+        height: 560
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
