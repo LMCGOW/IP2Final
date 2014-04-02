@@ -18,7 +18,7 @@ public class MG_TrashSpawn : MonoBehaviour {
         amountOfTrash = PlayerScore.Score;
 
         //Used for testing purposes
-       //amountOfTrash = 100;
+       amountOfTrash = 100;
 
         trashLeft = amountOfTrash;
 

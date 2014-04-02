@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MG_ShowScore : MonoBehaviour {
-
-    static int score= 0; 
+public class hh : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,10 +13,10 @@ public class MG_ShowScore : MonoBehaviour {
 	
 	}
 
-    public static void AddScore(int addition)
+    void OnGUI()
     {
-        score += addition;
-    }
 
-  
+       
+
+    }
 }

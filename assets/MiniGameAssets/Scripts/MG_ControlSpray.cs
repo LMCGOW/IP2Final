@@ -4,7 +4,7 @@ using System.Collections;
 public class MG_ControlSpray : MonoBehaviour {
 
     float moveSpeed = 3f;
-    static float sprayRemaining = 100;
+    public static float sprayRemaining = 100;
 
 	// Use this for initialization
 	void Start () {
@@ -58,8 +58,5 @@ public class MG_ControlSpray : MonoBehaviour {
 
     
 
-    void OnGUI()
-    {
-        GUI.Box(new Rect(10, 40, 150, 20), "Spray remaining: " + sprayRemaining); 
-    }
+   
 }
