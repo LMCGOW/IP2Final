@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour {
 	public GameObject trash;
 
     Animator animator;
+    bool isHit = false;
+    float isHitTimer = 0.3f;
 
 	// Use this for initialization
 	void Start () {
@@ -51,6 +53,22 @@ public class PlayerMovement : MonoBehaviour {
         {
             this.transform.position = playerSpawn;
             respawn = false;
+        }
+
+        if (isHit)
+        {
+            isHitTimer -= Time.deltaTime;
+
+            if (PlayerScore.Score >= 5)
+            {
+                animator.Play("IsHit 0");
+            }
+
+            if (isHitTimer <= 0)
+            {
+                isHit = false;
+                isHitTimer = 0.3f;
+            }
         }
 
 	}
@@ -85,18 +103,25 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey(KeyCode.W))
         {
             this.transform.position += new Vector3(0, 0.1f, 0);
+
+            if (!isHit)
             animator.Play("WalkingUp");
         }
     
         else if (Input.GetKey(KeyCode.D))
         {
             this.transform.position += new Vector3(0.1f, 0, 0);
-            animator.Play("WalkingRight");
+
+            if (!isHit)
+                animator.Play("WalkingRight");
+            
         }
 
         else if (Input.GetKey(KeyCode.A))
         {
             this.transform.position += new Vector3(-0.1f, 0, 0);
+
+            if (!isHit)
             animator.Play("WalkingLeft");
         }
 
@@ -104,10 +129,13 @@ public class PlayerMovement : MonoBehaviour {
         else if (Input.GetKey(KeyCode.S))
         {
             this.transform.position += new Vector3(0, -0.1f, 0);
+
+            if (!isHit)
             animator.Play("WalkingForward");
         }
         else
         {
+            if (!isHit)
             animator.Play("Idle");
         }
     }
@@ -131,8 +159,10 @@ public class PlayerMovement : MonoBehaviour {
 			{
 				ChangeSpeed(0.1f * PlayerScore.Score);
 			}
-
+            isHit = true;
 			PlayerScore.ChangeScore(-5);
+
+           
         }
         else if (collisionInfo.collider.tag == "EnemyHarder")
         {
@@ -144,8 +174,9 @@ public class PlayerMovement : MonoBehaviour {
             {
                 ChangeSpeed(0.1f * PlayerScore.Score);
             }
-
+            isHit = true;
             PlayerScore.ChangeScore(-10);
+
 
         }
     }

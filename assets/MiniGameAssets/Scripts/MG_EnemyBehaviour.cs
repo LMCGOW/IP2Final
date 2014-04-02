@@ -165,7 +165,7 @@ public class MG_EnemyBehaviour : MonoBehaviour {
     {
         if (colInfo.collider.tag == "MG_BugSpray" && Input.GetMouseButton(0) && MG_ControlSpray.GetSprayRemaining() > 0.0f)
         {
-            health -= 50;
+            health -= 25;
             DisplayHealthReduction();
         }
     }
