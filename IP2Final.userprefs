@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets/MainMenuAssets/Scripts/menuScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets/GameSceneAssets/Scripts/EnemyScripts/EnemyCollision/CollisionScript.cs">
     <Files>
-      <File FileName="assets/MainMenuAssets/Scripts/menuScript.cs" Line="13" Column="19" />
+      <File FileName="assets/GameSceneAssets/Scripts/PlayerScripts/Score/PlayerScore.cs" Line="1" Column="1" />
+      <File FileName="assets/GameSceneAssets/Scripts/EnemyScripts/EnemyCollision/CollisionScript.cs" Line="30" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
