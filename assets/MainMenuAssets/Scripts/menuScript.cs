@@ -30,7 +30,7 @@ public class menuScript : MonoBehaviour {
 
 	void OnGUI () {
 
-	//	GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), backgroundTexture, ScaleMode.StretchToFill, true, 0);
+	//GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), backgroundTexture, ScaleMode.StretchToFill, true, 0);
 
 		if (instructionsTexture.activeSelf == false) { 
 

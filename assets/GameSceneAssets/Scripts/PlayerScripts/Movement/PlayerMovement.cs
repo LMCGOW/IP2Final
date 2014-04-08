@@ -20,8 +20,11 @@ public class PlayerMovement : MonoBehaviour {
 
 	public GameObject trash;
 
+	public Texture2D hitScreen;
+
     Animator animator;
     bool isHit = false;
+	bool flashScreen = false;
     float isHitTimer = 0.3f;
 
 	// Use this for initialization
@@ -161,8 +164,7 @@ public class PlayerMovement : MonoBehaviour {
 			}
             isHit = true;
 			PlayerScore.ChangeScore(-5);
-
-           
+			flashScreen = true;      
         }
         else if (collisionInfo.collider.tag == "EnemyHarder")
         {
@@ -176,8 +178,7 @@ public class PlayerMovement : MonoBehaviour {
             }
             isHit = true;
             PlayerScore.ChangeScore(-10);
-
-
+			flashScreen = true;
         }
     }
 
@@ -191,5 +192,20 @@ public class PlayerMovement : MonoBehaviour {
     {
         respawn = true;
     }
+
+	void OnGUI () {
+
+		if (flashScreen) {
+			GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), hitScreen, ScaleMode.StretchToFill);
+			StartCoroutine(FlashWait());
+		}
+	}
+
+	IEnumerator FlashWait () {
+
+		yield return new WaitForSeconds(0.2f);
+		flashScreen = false;
+
+	}
 
 }
