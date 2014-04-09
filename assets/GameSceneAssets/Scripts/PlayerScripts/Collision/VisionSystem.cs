@@ -10,7 +10,7 @@ public class VisionSystem : MonoBehaviour {
 	//Draws items on GUI layer
 	void OnGUI () {
 
-		if (atRecyclingPlant)
+		if (atRecyclingPlant && PlayerScore.Score>=5)
 			GUI.DrawTexture(new Rect(Screen.width/2 - 91.5f, Screen.height/2 - 80, 183, 40), pressSpaceImageTexture, ScaleMode.StretchToFill, true, 0);
 	}
 	
