@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets/GameSceneAssets/Scripts/GameManagementScripts/DrawPadlock.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets/GameSceneAssets/Scripts/GameManagementScripts/playerHitSceenScript.cs">
     <Files>
-      <File FileName="assets/GameSceneAssets/Scripts/PlayerScripts/Collision/VisionSystem.cs" Line="14" Column="72" />
-      <File FileName="assets/GameSceneAssets/Scripts/PlayerScripts/Movement/PlayerMovement.cs" Line="199" Column="99" />
-      <File FileName="assets/GameSceneAssets/Scripts/GameManagementScripts/CameraControl.cs" Line="40" Column="52" />
-      <File FileName="assets/GameSceneAssets/Scripts/GameManagementScripts/DrawPadlock.cs" Line="25" Column="1" />
+      <File FileName="assets/GameSceneAssets/Scripts/EnemyScripts/EnemyCollision/CollisionScript.cs" Line="6" Column="2" />
+      <File FileName="assets/GameSceneAssets/Scripts/GameManagementScripts/playerHitSceenScript.cs" Line="20" Column="3" />
+      <File FileName="assets/GameSceneAssets/Scripts/PlayerScripts/Score/PlayerScore.cs" Line="13" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

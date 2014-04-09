@@ -3,8 +3,6 @@ using System.Collections;
 
 public class CollisionScript : MonoBehaviour {
 
-	public AudioClip[] trashPickup;
-
 	// Use this for initialization
 	void Start () {
 	
@@ -25,19 +23,21 @@ public class CollisionScript : MonoBehaviour {
 			//PlayerMovement.ChangeSpeed(-0.1f);
             SpawnTrash.RemoveTrash();
             PlayerScore.ChangeScore(1);
-			audio.clip = trashPickup[Random.Range(0, trashPickup.Length)];
-			audio.Play();
-			gameObject.renderer.enabled = false;
-			StartCoroutine(WaitAndDestroy(audio.clip.length));
+
+			GameObject.Find("_GameManager").GetComponent<PlayerScore>().play = true;
+
+			//gameObject.renderer.enabled = false;
+			Destroy(gameObject);
+			//StartCoroutine(WaitAndDestroy(audio.clip.length));
         }
 
     }
 
-	IEnumerator WaitAndDestroy (float waitTime) 
+	/*IEnumerator WaitAndDestroy (float waitTime) 
 	{
 
 		yield return new WaitForSeconds(waitTime);
 		Destroy(gameObject);
 
-	}
+	}*/
 }

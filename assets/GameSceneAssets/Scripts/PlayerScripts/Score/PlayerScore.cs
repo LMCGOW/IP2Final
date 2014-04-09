@@ -6,6 +6,10 @@ public class PlayerScore : MonoBehaviour {
     static int playerScore = 0;
     static int safePlayerScore = 0;
 
+	public AudioClip[] trashPickup;
+
+	public bool play = false;
+	
 	public GUIStyle counterStyle;
 
 	public static int Score{
@@ -31,9 +35,19 @@ public class PlayerScore : MonoBehaviour {
         if (playerScore < 0)
             playerScore = 0;
 
+		PlaySound();
+
 	}
 
+	void PlaySound () {
 
+		if(play) 
+		{
+			audio.clip = trashPickup[Random.Range(0, trashPickup.Length)];
+			audio.Play();
+			play = false;
+		}
+	}
 
     void OnGUI()
     {
