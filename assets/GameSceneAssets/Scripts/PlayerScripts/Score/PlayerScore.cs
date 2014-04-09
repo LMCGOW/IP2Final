@@ -4,7 +4,9 @@ using System.Collections;
 public class PlayerScore : MonoBehaviour {
 
     static int playerScore = 0;
-    static int safePlayerScore = 20;
+    static int safePlayerScore = 0;
+
+	public GUIStyle counterStyle;
 
 	public static int Score{
 
@@ -36,8 +38,8 @@ public class PlayerScore : MonoBehaviour {
     void OnGUI()
     {
 
-      /*  GUI.Box(new Rect(10, 10, 150, 20), "Trash Carried: " + playerScore);
-        GUI.Box(new Rect(10, 40, 150, 20), "Recycled Trash: " + safePlayerScore); */
+		GUI.Box(new Rect(10, 10, 150, 20), "Trash Carried: " + playerScore, counterStyle);
+		GUI.Box(new Rect(10, 40, 150, 20), "Recycled Trash: " + safePlayerScore, counterStyle);
 
     }
 

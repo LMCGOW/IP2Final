@@ -5,20 +5,29 @@ public class MG_TrashSpawn : MonoBehaviour {
 
     public GameObject trash;
 
+	public GUIStyle mg_HUD;
+
 	//The amount of trash to use this level
 	int amountOfTrash;
 
     static int trashLeft;
+
+	public static int Score{
+		
+		get { return trashLeft; }
+		
+	}
+
 
     float timer = 0f;
 
 	// Use this for initialization
 	void Start () {
 
-        amountOfTrash = PlayerScore.Score;
+    	amountOfTrash = PlayerScore.Score;
 
         //Used for testing purposes
-       amountOfTrash = 100;
+        //amountOfTrash = 100;
 
         trashLeft = amountOfTrash;
 

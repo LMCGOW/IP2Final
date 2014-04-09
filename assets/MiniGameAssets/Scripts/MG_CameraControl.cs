@@ -13,6 +13,8 @@ public class MG_CameraControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
+		Camera.main.orthographicSize = maxSize;
+
 	}
 	
 	// Update is called once per frame

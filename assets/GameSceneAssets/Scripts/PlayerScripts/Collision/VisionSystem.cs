@@ -4,10 +4,14 @@ using System.Collections;
 public class VisionSystem : MonoBehaviour {
 
     public bool atRecyclingPlant = false;
-
-	// Use this for initialization
-	void Start () {
 	
+	public Texture2D pressSpaceImageTexture;
+
+	//Draws items on GUI layer
+	void OnGUI () {
+
+		if (atRecyclingPlant)
+			GUI.DrawTexture(new Rect(Screen.width/2 - 91.5f, Screen.height/2 - 80, 183, 40), pressSpaceImageTexture, ScaleMode.StretchToFill, true, 0);
 	}
 	
 	// Update is called once per frame

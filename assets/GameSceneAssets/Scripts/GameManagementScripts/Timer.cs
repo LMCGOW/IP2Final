@@ -148,6 +148,8 @@ public class Timer : MonoBehaviour
 	public static float timerMinutes;
 	public static float timerSeconds;
 
+	public GUIStyle hudStyle;
+
 	bool coolDown = false;
 	float coolDownTimer = 0.0F;
 
@@ -205,7 +207,7 @@ public class Timer : MonoBehaviour
 
 	void OnGUI() 
 	{
-		GUI.Label(new Rect( Screen.width - 210, 10, 200, 25), "Time left:" + " " + timerMinutes.ToString("F0") + ":" + timerSeconds.ToString("F0"));
+		GUI.Label(new Rect( Screen.width - 210, 10, 200, 25), "Time left:" + " " + timerMinutes.ToString("F0") + ":" + timerSeconds.ToString("F0"), hudStyle);
 	}
 
 }
