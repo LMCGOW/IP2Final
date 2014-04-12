@@ -3,6 +3,11 @@ using System.Collections;
 
 public class MG_ControlSpray : MonoBehaviour {
 
+	public AudioClip Siren;
+	public bool sirenPlay = false;
+
+
+
     float moveSpeed = 3f;
     public static float sprayRemaining = 100;
 
@@ -25,6 +30,12 @@ public class MG_ControlSpray : MonoBehaviour {
        {
            RemoveSpray();
        }
+	   else if(Input.GetMouseButtonUp(0))
+		{
+			GameObject.Find("_MiniGameManager").GetComponent<MG_SoundScript>().sprayPlay = false;
+			GameObject.Find("_MiniGameManager").GetComponent<MG_SoundScript>().sprayEmptyPlay = false;
+			GameObject.Find("BugSpray").audio.loop = false;
+		}
 
        if (sprayRemaining <= 0)
            sprayRemaining = 0;
@@ -41,6 +52,15 @@ public class MG_ControlSpray : MonoBehaviour {
     {
 
         sprayRemaining -= 0.5f;
+		 
+		if(sprayRemaining > 0)
+		{
+			GameObject.Find("_MiniGameManager").GetComponent<MG_SoundScript>().sprayPlay = true;
+		}
+		else
+		{
+			GameObject.Find("_MiniGameManager").GetComponent<MG_SoundScript>().sprayEmptyPlay = true;
+		}
 
     }
 

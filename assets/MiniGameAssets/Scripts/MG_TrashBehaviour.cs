@@ -34,6 +34,10 @@ public class MG_TrashBehaviour : MonoBehaviour {
     {
 
         if(this.transform.position.x >= endPosition.x){
+
+			GameObject.Find("_MiniGameManager").GetComponent<MG_SoundScript>().recyclePlay = true;
+
+
             Destroy(gameObject);
             MG_ShowScore.AddScore(1);
             PlayerScore.ChangeSafeScore(1);
@@ -46,8 +50,10 @@ public class MG_TrashBehaviour : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D colInfo)
 	{
   
-            Destroy(gameObject);
-            MG_TrashSpawn.ChangeTrashLeft();
+		GameObject.Find("_MiniGameManager").GetComponent<MG_SoundScript>().sirenPlay = true;
+	
+        Destroy(gameObject);
+        MG_TrashSpawn.ChangeTrashLeft();
      
 	}
 
