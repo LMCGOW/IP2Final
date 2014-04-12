@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets/GameSceneAssets/Scripts/GameManagementScripts/playerHitSceenScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameOverAssets/Scripts/GameOverScript.cs">
     <Files>
-      <File FileName="assets/GameSceneAssets/Scripts/EnemyScripts/EnemyCollision/CollisionScript.cs" Line="6" Column="2" />
-      <File FileName="assets/GameSceneAssets/Scripts/GameManagementScripts/playerHitSceenScript.cs" Line="20" Column="3" />
-      <File FileName="assets/GameSceneAssets/Scripts/PlayerScripts/Score/PlayerScore.cs" Line="13" Column="30" />
+      <File FileName="Assets/GameOverAssets/Scripts/GameOverScript.cs" Line="21" Column="47" />
+      <File FileName="Assets/MainMenuAssets/Scripts/menuScript.cs" Line="37" Column="113" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
