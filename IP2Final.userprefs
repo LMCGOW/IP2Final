@@ -1,15 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MiniGameAssets/Scripts/MG_TrashSpawn.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MainMenuAssets/Scripts/menuScript.cs">
     <Files>
-      <File FileName="Assets/GameSceneAssets/Scripts/EnemyScripts/EnemySpawns/SpawnEnemy.cs" Line="26" Column="11" />
-      <File FileName="Assets/GameSceneAssets/Scripts/EnemyScripts/EnemySpawns/SpawnEnemyDistrict2.cs" Line="22" Column="41" />
-      <File FileName="Assets/GameSceneAssets/Scripts/EnemyScripts/EnemySpawns/SpawnEnemyDistrict3.cs" Line="23" Column="40" />
-      <File FileName="Assets/GameSceneAssets/Scripts/TrashScripts/SpawnTrash.cs" Line="34" Column="11" />
-      <File FileName="Assets/GameSceneAssets/Scripts/TrashScripts/SpawnTrashDistrict2.cs" Line="27" Column="77" />
-      <File FileName="Assets/GameSceneAssets/Scripts/TrashScripts/SpawnTrashDistrict3.cs" Line="26" Column="40" />
-      <File FileName="Assets/GameSceneAssets/Scripts/PlayerScripts/Movement/PlayerMovement.cs" Line="180" Column="39" />
-      <File FileName="Assets/MiniGameAssets/Scripts/MG_TrashSpawn.cs" Line="27" Column="6" />
+      <File FileName="Assets/MainMenuAssets/Scripts/menuScript.cs" Line="63" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
