@@ -19,7 +19,7 @@ public class SpawnEnemyDistrict2 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (PlayerScore.SafeScore >= 20 && PlayerScore.SafeScore < 40)
+        if (PlayerScore.SafeScore >= 15 /*20 && PlayerScore.SafeScore < 40*/)
         {
             SpawnEnemies();
         }

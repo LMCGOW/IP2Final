@@ -24,7 +24,7 @@ public class SpawnTrashDistrict2 : MonoBehaviour {
     void Update()
     {
 
-        if (PlayerScore.SafeScore >= 20 && PlayerScore.SafeScore < 40)
+        if (PlayerScore.SafeScore >= 15 /*20 && PlayerScore.SafeScore < 40*/)
         {
 
             randomTrashIndex = RandomNumber.GenerateRandomNumber(0, 5);

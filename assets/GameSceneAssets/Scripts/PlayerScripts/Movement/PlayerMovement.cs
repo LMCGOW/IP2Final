@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour {
             respawn = false;
         }
 
-        if (isHit)
+        /*if (isHit)
         {
             isHitTimer -= Time.deltaTime;
 
@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour {
                 isHit = false;
                 isHitTimer = 0.3f;
             }
-        }
+        }*/
 
 	}
 	
@@ -162,7 +162,7 @@ public class PlayerMovement : MonoBehaviour {
 			{
 				ChangeSpeed(0.1f * PlayerScore.Score);
 			}
-            isHit = true;
+            //isHit = true;
 			PlayerScore.ChangeScore(-5);
 			flashScreen = true;      
         }
@@ -176,8 +176,8 @@ public class PlayerMovement : MonoBehaviour {
             {
                 ChangeSpeed(0.1f * PlayerScore.Score);
             }
-            isHit = true;
-            PlayerScore.ChangeScore(-10);
+            //isHit = true;
+            PlayerScore.ChangeScore(-2);
 			flashScreen = true;
         }
     }

@@ -4,7 +4,7 @@ using System.Collections;
 public class SpawnEnemyDistrict3 : MonoBehaviour {
 
     static int enemyCount = 0;
-    public static int maxEnemyCount = 70;
+    public static int maxEnemyCount = 16;
 
     public GameObject enemyHarder;
     public GameObject enemy;
@@ -20,7 +20,7 @@ public class SpawnEnemyDistrict3 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (PlayerScore.SafeScore >= 40)
+        if (PlayerScore.SafeScore >= 25 /*40*/)
         {
             SpawnEnemies();
         }

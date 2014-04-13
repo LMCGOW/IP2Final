@@ -23,7 +23,7 @@ public class SpawnTrashDistrict3 : MonoBehaviour {
     void Update()
     {
 
-        if (PlayerScore.SafeScore >= 40)
+        if (PlayerScore.SafeScore >= 25 /*40*/)
         {
 
             randomTrashIndex = RandomNumber.GenerateRandomNumber(0, 8);

@@ -29,7 +29,7 @@ public class EnemyHardestMovement : MonoBehaviour {
     int random1;
     int random2;
 
-	float enemyWalkingSpeed = 3.2f;
+	float enemyWalkingSpeed = 3f;
 
     float timer = 4f;
 

@@ -22,8 +22,8 @@ public class SpawnTrash : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (PlayerScore.SafeScore <= 20)
-        {
+        //if (PlayerScore.SafeScore <= 20)
+        //{
             randomTrashIndex = RandomNumber.GenerateRandomNumber(0, 3);
 
             if (RandomNumber.GenerateRandomNumber(0, 100000) < 5 && trashCount < maxTrashCount)
@@ -31,7 +31,7 @@ public class SpawnTrash : MonoBehaviour {
                 Instantiate(trashList[randomTrashIndex], this.transform.position, new Quaternion(0, 0, 0, 0));
                 trashCount++;
             }
-        }
+        //}
         
 
 	}
